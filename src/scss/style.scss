@@ -6,7 +6,9 @@ Version: 1.0
 */
 
 
-
+// BASE
+@import "./base/variables.scss";
+@import "./base/defaults.scss";
 
 // SECTIONS
 @import "./sections/hero";
@@ -16,8 +18,6 @@ Version: 1.0
 @import "./pages/404";
 
 // COMPONENTS
-@import "./base/variables.scss";
-@import "./base/defaults.scss";
 @import "./components/navbar";
 @import "./components/buttons";
 @import "./components/footer";
