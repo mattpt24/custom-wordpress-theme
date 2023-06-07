@@ -1,0 +1,32 @@
+/* 
+Theme Name: My Custom Theme
+Author: Matt Persell-Thompson
+Description: This is a custom build WP Theme
+Version: 1.0
+*/
+
+
+
+
+// SECTIONS
+@import "./sections/hero";
+
+
+// PAGES
+@import "./pages/404";
+
+// COMPONENTS
+@import "./base/variables.scss";
+@import "./base/defaults.scss";
+@import "./components/navbar";
+@import "./components/buttons";
+@import "./components/footer";
+@import "./components/cta";
+
+
+// LAYOUT
+@import "./layout/page";
+
+
+
+
