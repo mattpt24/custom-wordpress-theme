@@ -77,7 +77,7 @@ LIVE SERVER SET UP
 
 
 npx mix watch - Compile JS & SCSS files Automatically (Recommended)
-npx mix - Compile JS & SCSS files Manually
+npx mix - Will bring back styles.css & script.js files if deleted and compile manually
 
 
 
