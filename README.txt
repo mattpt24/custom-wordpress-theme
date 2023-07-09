@@ -475,7 +475,6 @@ META SLIDER CAROUSEL WP PLUGIN
 
 
 
-
 HTML / PHP ----
 <div class="project-modal__carousel"><?php echo do_shortcode( '[metaslider id="'.get_field('image_carousel').'"]' ); ?></div>
 
@@ -509,7 +508,7 @@ SCSS ----
         .flex-prev,
         .flex-next {
             transition: all .3s ease;
-            background: $clr-primary-lighter!important;
+            background: red!important;
             border-radius: 100%;
             position: relative;
             opacity: .5!important;
