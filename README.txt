@@ -441,12 +441,6 @@ SHOW THE PREVIOUS & NEXT POST
 
 
 
-
-
-
-
-
-
 MAKE CONTENT ONLY APPEAR ON CERTAIN PAGES
 
 
@@ -462,3 +456,120 @@ MAKE CONTENT ONLY APPEAR ON CERTAIN PAGES
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+META SLIDER CAROUSEL WP PLUGIN 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+** SET UP ACF FIELD WHERE YOU WANT THE CAROUSEL TO APPEAR CALLED 'Image Carousel (image_carousel)' **
+** ENTER THE NUMBER OF THE CAROUSEL INTO THE FIELD TO DISPLAY SPECIFIC CAROUSEL **
+
+
+
+
+
+HTML / PHP ----
+<div class="project-modal__carousel"><?php echo do_shortcode( '[metaslider id="'.get_field('image_carousel').'"]' ); ?></div>
+
+
+
+
+SCSS ----
+
+    .project-modal__carousel {
+        width: 42vw;
+        margin: 0 auto;
+
+
+        // DOTS
+        ol {
+            li {
+                a {
+                    background: white!important;
+                }
+            }
+        }
+
+        .flex-active {
+            background: red!important;
+            border-color: red!important;
+        }
+
+
+
+        // NEXT / PREVIOUS BUTTONS
+        .flex-prev,
+        .flex-next {
+            transition: all .3s ease;
+            background: $clr-primary-lighter!important;
+            border-radius: 100%;
+            position: relative;
+            opacity: .5!important;
+            &:hover {
+                transition: all .3s ease;
+                opacity: 1!important;
+                cursor: pointer;
+            }
+        }
+
+        .flex-prev {
+            &::after {
+                content: "";
+                height: 8px;
+                width: 8px;
+                background: none;
+                border-left: solid 2px white;
+                border-bottom: solid 2px white;
+                position: absolute;
+                top: 58%;
+                left: 40%;
+                transform: rotate(45deg) translate(-50%,-50%);
+            }
+        }
+
+
+        .flex-next {
+            &::after {
+                content: "";
+                height: 8px;
+                width: 8px;
+                background: none;
+                border-right: solid 2px white;
+                border-bottom: solid 2px white;
+                position: absolute;
+                top: 35%;
+                left: 50%;
+
+                transform: rotate(-45deg) translate(-50%,-50%);
+            }
+        }
+
+
+
+        img {
+            height: 500px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            width: 85vw;
+        }
+         @media screen and (max-width: $mobile) {
+            width: 90vw;
+        }
+    }
+
+}
+
+// END OF IMAGE CAROUSEL STYLES
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
