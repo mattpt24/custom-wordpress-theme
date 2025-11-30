@@ -1,0 +1,46 @@
+{
+  "name": "custom-wordpress-theme",
+  "version": "1.0.0",
+  "description": "Create 'src' folder containing JS and SCSS folders for Laravel Mix compilation.",
+  "main": "script.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-prod": "NODE_ENV=production mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "keywords": [
+    "laravel-mix",
+    "scss",
+    "webpack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "autoprefixer": "^10.4.13",
+    "laravel-mix": "^6.0.49",
+    "postcss": "^8.4.20",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.57.0",
+    "sass-loader": "^12.6.0",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3",
+    "webpack-livereload-plugin": "^1.2.0"
+  },
+  "overrides": {
+    "webpack-dev-server": "5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattpt24/wp-theme-setup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattpt24/wp-theme-setup/issues"
+  },
+  "homepage": "https://github.com/mattpt24/wp-theme-setup#readme"
+}

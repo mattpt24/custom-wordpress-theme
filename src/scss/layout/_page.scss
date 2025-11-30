@@ -1,0 +1,25 @@
+@use "../base/variables.scss" as var;
+@use "../base/mixins.scss" as mixin;
+
+
+.width-container {
+    width: 85%;
+    max-width: 1800px;
+    margin: 0 auto;
+
+    @media screen and (max-width: var.$mobile) { 
+        width: 90%;
+    }
+}
+
+
+.padding-container {
+    padding: 10rem 0;
+
+    @media screen and (max-width: var.$tablet) { 
+        padding: 8rem 0;
+    }
+    @media screen and (max-width: var.$mobile) { 
+        padding: 6rem 0;
+    }
+}

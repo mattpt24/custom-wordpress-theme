@@ -1,0 +1,41 @@
+// COLOR SCHEME 
+$clr-primary: #222;
+$clr-primary-lighter: #373737;
+$clr-primary-darker: #0d0d0d;
+$clr-primary-faded: #222222c7;
+
+$clr-secondary: teal;
+$clr-secondary-lighter: rgb(7, 155, 155);
+$clr-secondary-darker: rgb(4, 97, 97);
+$clr-secondary-faded: rgba(0, 128, 128, 0.804);
+
+
+
+// FONT SIZES
+$fs-sml: 1rem;
+$fs-med: 1.4rem; 
+$fs-lrge: 2rem;
+$fs-xlrge: 2.5rem;
+$page-title: 3.5rem;
+$hero-title: 4.5rem;
+
+
+
+// FONT WEIGHT
+$fw-1: 200;
+$fw-2: 300;
+$fw-3: 400;
+$fw-4: 600;
+$fw-5: 900;
+
+
+
+// FONT FAMILY
+$ff-main:'Inter Tight', sans-serif;
+
+
+// RESPONSIVE BREAKPOINTS
+$mobile: 560px;
+$tablet: 1360px;
+$laptop: 1800px;
+$desktop: 2200px;

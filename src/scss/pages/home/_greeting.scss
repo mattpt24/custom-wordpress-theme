@@ -1,0 +1,42 @@
+@use "../../base/variables.scss" as var;
+@use "../../base/mixins.scss" as mixin;
+
+
+
+// FEEL FREE TO DELETE THIS FILE TO REMOVE GREETING MESSAGE STYLES 
+
+
+.greeting {
+    @include mixin.flex-center(0);
+    height: 100vh;
+    background: #222;
+    color: #fff;
+    text-align: center;
+
+    .greeting__logo {
+        width: 250px;
+        @media screen and (max-width:var.$mobile) {
+            width: 150px;
+        }
+    }
+
+    .greeting__heading {
+        font-size: 3rem;
+        font-weight: 100;
+        margin: 2rem 0 1rem 0;
+        @media screen and (max-width:var.$mobile) {
+           font-size: 1.6rem;
+        }
+    }
+
+    .greeting__subheading {
+        font-size: 1.4rem;
+        font-weight: 100;
+        color: rgb(255, 255, 255, .5);
+        @media screen and (max-width:var.$mobile) {
+            font-size: 1rem;
+         }
+    }
+
+
+}

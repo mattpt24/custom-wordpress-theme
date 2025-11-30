@@ -1,0 +1,27 @@
+/* 
+Theme Name: Custom WordPress Theme
+Author: Matt Persell-Thompson
+Description: This is a custom build WP Theme template
+Version: 1.0
+*/
+
+
+// BASE
+@use "./base/variables.scss";
+@use "./base/defaults.scss";
+@use "./base/classes.scss";
+@use "./base/mixins.scss";
+@use "./base/keyframes.scss";
+
+// COMPONENTS
+@use "./components/navbar";
+@use "./components/buttons";
+@use "./components/footer";
+
+// LAYOUT
+@use "./layout/page";
+
+// PAGES
+@use "./pages/home/greeting"; // DELETE 
+@use "./pages/home/home";
+@use "./pages/other/page-not-found";
